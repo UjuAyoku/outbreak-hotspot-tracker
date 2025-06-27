@@ -79,4 +79,4 @@ K-means++ is widely used in various applications, including:
 📥 Clone the repo:
    ```bash
    git clone https://github.com/UjuAyoku/kmeans-clustering.git
-   cd kmeans-covid-clustering
+   cd kmeans-clustering
