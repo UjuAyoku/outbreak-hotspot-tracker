@@ -8,7 +8,7 @@ The algorithm is implemented from scratch in Python using vectorized operations 
 This project demonstrates the power of unsupervised machine learning in deriving insight from unlabeled, real-world data.
 
 ## Problem Statement:
-During the outbreak of viruses such as COVID-19, understanding how infections spread spatially is critical. Given only the coordinates of infected individuals—including a few known index cases (initially infected)—can we:
+During the outbreak of viruses such as COVID-19, understanding how infections spread spatially is critical. Given only the coordinates of infected individuals, including 4 known initially infected patients, can we:
 
 - Group other patients based on proximity to these initial cases?
 
