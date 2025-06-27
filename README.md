@@ -24,7 +24,7 @@ During the outbreak of viruses such as COVID-19, understanding how infections sp
 | **Silhouette Score**   | Evaluate clustering quality              |
 | **Python**             | Implementation and control logic         |
 
-## Applications
+## Other Applications
 K-means++ is widely used in various applications, including:
 - Image segmentation: Segmenting images based on color or texture features.
 - Customer segmentation: Grouping customers based on purchasing habits or demographic data.
