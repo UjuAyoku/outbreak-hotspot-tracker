@@ -49,6 +49,7 @@ K-means++ is widely used in various applications, including:
 67              # Index of centroid 4
 
 83,13           # Patient 1 (x, y)
+
 ...
 
 81,32           # Patient 100
