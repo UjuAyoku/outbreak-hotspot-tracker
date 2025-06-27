@@ -26,23 +26,31 @@ During the outbreak of viruses such as COVID-19, understanding how infections sp
 
 ## Applications
 K-means++ is widely used in various applications, including:
-•	Image segmentation: Segmenting images based on color or texture features.
-•	Customer segmentation: Grouping customers based on purchasing habits or demographic data.
-•	Anomaly detection: Identifying outliers in datasets.
-•	Document clustering: Grouping similar documents based on content.
-• Recommender systems: Recommending products or services based on user preferences
+- Image segmentation: Segmenting images based on color or texture features.
+- Customer segmentation: Grouping customers based on purchasing habits or demographic data.
+- Anomaly detection: Identifying outliers in datasets.
+- Document clustering: Grouping similar documents based on content.
+- Recommender systems: Recommending products or services based on user preferences
 
 
 ## Input Format (kmeans.txt):
 50              # Max number of iterations
+
 100             # Number of total patients
+
 4               # Number of clusters (initial infections)
+
 12              # Index of centroid 1
+
 23              # Index of centroid 2
+
 50              # Index of centroid 3
+
 67              # Index of centroid 4
+
 83,13           # Patient 1 (x, y)
 ...
+
 81,32           # Patient 100
 
 ## Outputs:
