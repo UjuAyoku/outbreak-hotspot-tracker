@@ -38,15 +38,15 @@ K-means++ is widely used in various applications, including:
 
 100             # Number of total patients
 
-4               # Number of clusters (initial infections)
+4               # Number of clusters (number of known initial infections)
 
-12              # Index of centroid 1
+12              # Index of centroid 1 (known initially infected source)
 
-23              # Index of centroid 2
+23              # Index of centroid 2 (known initially infected source)
 
-50              # Index of centroid 3
+50              # Index of centroid 3 (known initially infected source)
 
-67              # Index of centroid 4
+67              # Index of centroid 4 (known initially infected source)
 
 83,13           # Patient 1 (x, y)
 
