@@ -72,3 +72,11 @@ K-means++ is widely used in various applications, including:
 - Use density-based clustering (e.g. DBSCAN) for comparison
 
 - Deploy the model as an interactive web app
+
+
+## How to Run
+
+📥 Clone the repo:
+   ```bash
+   git clone https://github.com/UjuAyoku/kmeans-clustering.git
+   cd kmeans-covid-clustering
