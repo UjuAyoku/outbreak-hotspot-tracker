@@ -78,7 +78,7 @@ On execution, a plot will be shown with patient locations grouped into clusters,
 
 🔴 Cluster 3
 
-Each centroid is marked with an X and of the same color as the cluster it belongs to.
+Each centroid is marked with an X and is of the same color as the cluster it belongs to.
 
 ## Extensions:
 - Incorporate time-stamped location data to track spread over time
