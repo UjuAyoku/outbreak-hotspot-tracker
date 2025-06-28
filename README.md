@@ -14,7 +14,7 @@ During the outbreak of viruses such as COVID-19, understanding how infections sp
 
 - Identify which geographic regions are likely hotspots or cluster zones?
 
-The assumption is that these infections were due to proximity or based on locaton similarity. Factors such as travel methods (car, plane, train etc.), temporal progression (when they got infected), infection chains or contact tracing, and individual behavior (mobility, superspreaders) were not considered in the absence of movement history nor time-based spread.
+The assumption is that these infections were due to proximity or based on locaton similarity. Factors such as travel methods (car, plane, train etc.), temporal progression (when they got infected), infection chains or contact tracing, and individual behavior (mobility, superspreaders) were not considered in the absence of movement nor time (who got infected when) history.
 
 ## Key Concepts and Technologies:
 | Concept / Tool         | Purpose                                  |
