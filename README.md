@@ -48,7 +48,7 @@ Adaptations of this solution can be used in various applications such as:
 
 50              # Index of centroid 3 (known initial infection source)
 
-67              # Index of centroid 4 ((known initial infection source)
+67              # Index of centroid 4 (known initial infection source)
 
 83,13           # Patient 1 (x, y)
 
