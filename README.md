@@ -5,7 +5,7 @@ This project applies the K-Means clustering algorithm to group COVID-19 patient 
 
 The algorithm is implemented from scratch in Python using vectorized operations with NumPy, enhanced by k-means++ initialization for better accuracy and convergence, and visualized using matplotlib. The clustering quality is also evaluated using the Silhouette Score from scikit-learn.
 
-This project demonstrates the power of unsupervised machine learning in deriving insight from unlabeled, real-world data.
+It demonstrates the power of unsupervised machine learning in deriving insight from unlabeled, real-world data.
 
 ## Problem Statement:
 During the outbreak of viruses such as COVID-19, understanding how infections spread spatially is critical. Given only the coordinates of infected individuals, including 4 known initially infected patients, can we:
