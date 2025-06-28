@@ -27,7 +27,7 @@ The assumption is that these infections were due to proximity or based on locato
 | **Python**             | Implementation and control logic         |
 
 ## Other Applications
-K-means++ is widely used in various applications, including:
+Adaptations of this solution can be used in various applications such as:
 - Image segmentation: Segmenting images based on color or texture features.
 - Customer segmentation: Grouping customers based on purchasing habits or demographic data.
 - Anomaly detection: Identifying outliers in datasets.
