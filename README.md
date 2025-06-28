@@ -67,6 +67,18 @@ Adaptations of this solution can be used in various applications such as:
 
 - Silhouette Score (clustering performance metric)
 
+## Visualization Example
+On execution, a plot will be shown with patient locations grouped into clusters, with distinct colors and labeled centroids:
+
+🟢 Cluster 0
+
+🔵 Cluster 1
+
+🟣 Cluster 2
+
+🔴 Cluster 3
+
+Each centroid is marked with an X and is of the same color as the cluster it belongs to.
 
 ## Extensions:
 - Incorporate time-stamped location data to track spread over time
