@@ -38,19 +38,16 @@ The tool needs a text file (kmeans.txt) with:
 83,13 # Patient 1’s location  
 81,32 # Patient 2’s location  
 
-
-### sample Output:
-- Initial and final centroid coordinates
-- Number of patients in each cluster
-- Iterations to convergence
-- Cluster visual plot
-- Silhouette Score (clustering performance metric)
-
 ### Sample Output
 1. Cluster Map:
 
 - 🟢 🔵 🟣 🔴 = Patient Clusters  
-- ❌ Markers = outbreak sources.
+- ❌ Markers = outbreak sources (centroids).
+2. Stats
+  - Initial and final centroid coordinates
+  - Patients per cluster
+  - How long the analysis took
+  - Silhouette Score (Quality check)
 
 
 ### Other Uses
