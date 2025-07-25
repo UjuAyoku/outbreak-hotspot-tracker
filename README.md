@@ -1,96 +1,75 @@
-# Clustering of COVID-19 Patient Locations using K-Means
+## Clustering of Patients Locations using K-Means
 
-## Project Description
-This project applies the K-Means clustering algorithm to group COVID-19 patient location data based on spatial proximity. Using the known coordinates of infected individuals, the natural groupings or clusters that could represent localized outbreak zones or transmission paths were identified.
+### Project Description
+This tool groups COVID-19 patient locations to identify potential outbreak hotspots. By analyzing where infected people are located, it helps pinpoint high-risk areas—useful for healthcare planning and resource allocation.
 
-The algorithm is implemented from scratch in Python using vectorized operations with NumPy, enhanced by k-means++ initialization for better accuracy and convergence, and visualized using matplotlib. The clustering quality is also evaluated using the Silhouette Score from scikit-learn.
+### Why This Matters:
+During outbreaks (such as COVID-19 or the recent measles outbreak in North America), knowing where infections are concentrated helps:
 
-It demonstrates the power of unsupervised machine learning in deriving insight from unlabeled, real-world data.
+- Hospitals prepare for surges.
+- Officials implement targeted lockdowns/testing.
+- Researchers study spread patterns.
 
-## Problem Statement:
-During the outbreak of viruses such as COVID-19, understanding how infections spread spatially is critical. Given only the coordinates of infected individuals, including 4 known initially infected patients, can we:
+Therefore, given only the coordinates of infected individuals, including 4 known initially infected patients, can:
+- Patients be grouped based on proximity to these initial cases?
+- Hotspots be identified?
 
-- Group other patients based on proximity to these initial cases?
+Note: This is a simplified model—it does not account for travel history nor method (car, plane, train etc.), temporal progression (when they got infected), infection chains or contact tracing, or individual behavior (mobility, superspreaders) due to data limitation.
 
-- Identify which geographic regions are likely hotspots or cluster zones?
-
-The assumption is that these infections were due to proximity or based on locaton similarity. Factors such as travel methods (car, plane, train etc.), temporal progression (when they got infected), infection chains or contact tracing, and individual behavior (mobility, superspreaders) were not considered in the absence of movement nor time (who got infected when) history.
-
-## Key Concepts and Technologies:
-| Concept / Tool         | Purpose                                  |
+### Key Concepts and Technologies Used:
+| Tech Used              | Purpose                                  |
 | ---------------------- | ---------------------------------------- |
-| **K-Means Clustering** | Group unlabeled data based on similarity |
-| **k-means++ Init**     | Improve centroid selection               |
-| **NumPy**              | Fast numeric operations                  |
-| **Matplotlib**         | Cluster visualization                    |
+| **K-Means Clustering (Custom Python)** | Find patient clusters                    |
+| **Matplotlib**         | Visualize clusters                            |
 | **Silhouette Score**   | Evaluate clustering quality              |
-| **Python**             | Implementation and control logic         |
 
-## Other Applications
+
+### Input Data Format:
+The tool needs a text file (kmeans.txt) with: 
+1. Settings: Max iterations, # of patients, # of clusters (number of known initial infections).
+2. Initial Outbreak Sources: Pre-defined "centers" (e.g., first known cases).
+3. Patient Locations: X,Y coordinates (e.g., 83,13 = patient at x=83, y=13).
+
+50   # Stop after 50 steps  
+100  # 100 patients  
+4    # 4 outbreak sources  
+12   # 1st source: Patient #12  
+...  
+83,13 # Patient 1’s location  
+81,32 # Patient 2’s location  
+
+
+### sample Output:
+- Initial and final centroid coordinates
+- Number of patients in each cluster
+- Iterations to convergence
+- Cluster visual plot
+- Silhouette Score (clustering performance metric)
+
+### Sample Output
+1. Cluster Map:
+
+- 🟢 🔵 🟣 🔴 = Patient Clusters  
+- ❌ Markers = outbreak sources.
+
+
+### Other Uses
 Adaptations of this solution can be used in various applications such as:
+- Customer segmentation: Grouping customers based on purchasing habits or location.
 - Image segmentation: Segmenting images based on color or texture features.
-- Customer segmentation: Grouping customers based on purchasing habits or demographic data.
 - Anomaly detection: Identifying outliers in datasets.
 - Document clustering: Grouping similar documents based on content.
 - Recommender systems: Recommending products or services based on user preferences
 
 
-## Input Format (kmeans.txt):
-50              # Max number of iterations
-
-100             # Number of total patients
-
-4               # Number of clusters (number of known initial infections)
-
-12              # Index of centroid 1 (known initial infection source)
-
-23              # Index of centroid 2 (known initial infection source)
-
-50              # Index of centroid 3 (known initial infection source)
-
-67              # Index of centroid 4 (known initial infection source)
-
-83,13           # Patient 1 (x, y)
-
-...
-
-81,32           # Patient 100
-
-## Outputs:
-- Initial and final centroid coordinates
-
-- Number of patients in each cluster
-
-- Iterations to convergence
-
-- Cluster visual plot
-
-- Silhouette Score (clustering performance metric)
-
-## Visualization Example
-On execution, a plot will be shown with patient locations grouped into clusters, with distinct colors and labeled centroids:
-
-🟢 Cluster 0
-
-🔵 Cluster 1
-
-🟣 Cluster 2
-
-🔴 Cluster 3
-
-Each centroid is marked with an X and is of the same color as the cluster it belongs to.
-
-## Extensions:
-- Incorporate time-stamped location data to track spread over time
-
-- Use density-based clustering (e.g. DBSCAN) for comparison
-
-- Deploy the model as an interactive web app
-
-
-## How to Run
+### How to Run
 
 📥 Clone the repo:
    ```bash
    git clone https://github.com/UjuAyoku/kmeans-clustering.git
    cd kmeans-clustering
+
+### Future Improvements:
+- Add time-based location data to track spread over time
+- Compare with other clustering methods (e.g. DBSCAN)  
+- Build a user-friendly web app.
