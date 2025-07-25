@@ -1,4 +1,4 @@
-# 🦠 Clustering of COVID-19 Patient Locations using K-Means
+# Clustering of COVID-19 Patient Locations using K-Means
 
 ## Project Description
 This project applies the K-Means clustering algorithm to group COVID-19 patient location data based on spatial proximity. Using the known coordinates of infected individuals, the natural groupings or clusters that could represent localized outbreak zones or transmission paths were identified.
