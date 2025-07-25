@@ -1,7 +1,7 @@
-## Clustering of Patients Locations using K-Means
+## Patient Location Clustering for Disease Outbreak Analysis
 
 ### Project Description
-This tool groups COVID-19 patient locations to identify potential outbreak hotspots. By analyzing where infected people are located, it helps pinpoint high-risk areas—useful for healthcare planning and resource allocation.
+This tool groups COVID-19 patient locations to identify potential outbreak hotspots. By analyzing where infected people are located, it helps pinpoint high-risk areas and is useful for healthcare planning and resource allocation.
 
 ### Why This Matters:
 During outbreaks (such as COVID-19 or the recent measles outbreak in North America), knowing where infections are concentrated helps:
