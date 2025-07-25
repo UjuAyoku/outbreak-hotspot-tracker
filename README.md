@@ -14,7 +14,7 @@ Therefore, given only the coordinates of infected individuals, including 4 known
 - Patients be grouped based on proximity to these initial cases?
 - Hotspots be identified?
 
-Note: This is a simplified model—it does not account for travel history nor method (car, plane, train etc.), temporal progression (when they got infected), infection chains or contact tracing, or individual behavior (mobility, superspreaders) due to data limitation.
+Note: This is a simplified model. It does not account for travel history nor method (car, plane, train etc.), temporal progression (when they got infected), infection chains or contact tracing, or individual behavior (mobility, superspreaders) due to data limitation.
 
 ### Key Concepts and Technologies Used:
 | Tech Used              | Purpose                                  |
