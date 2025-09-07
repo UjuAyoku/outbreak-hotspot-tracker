@@ -2,8 +2,7 @@
 
 <div align="center">
   <h1>Patient Location Clustering for Disease Outbreak Analysis</h1>
-  
-[![Live Demo](https://img.shields.io/badge/Try-Live_Demo-green)]()
+
 ![Status](https://img.shields.io/badge/Status-Concept-blue)
 
 </div>
@@ -27,8 +26,8 @@ Note: This is a simplified model. It does not account for travel history nor met
 ### Key Concepts and Technologies Used:
 | Tech Used              | Purpose                                  |
 | ---------------------- | ---------------------------------------- |
-| **K-Means Clustering (Custom Python)** | Find patient clusters                    |
-| **Matplotlib**         | Visualize clusters                            |
+| **K-Means Clustering (Custom Python)** | Find patient clusters    |
+| **Matplotlib**         | Visualize clusters                       |
 | **Silhouette Score**   | Evaluate clustering quality              |
 
 
