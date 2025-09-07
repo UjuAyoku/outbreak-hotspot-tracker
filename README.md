@@ -31,7 +31,7 @@ Note: This is a simplified model. It does not account for travel history nor met
 | **Silhouette Score**   | Evaluate clustering quality              |
 
 
-### Input Data Format:
+### Input Data Format
 The tool needs a text file (kmeans.txt) with: 
 1. Settings: Max iterations, # of patients, # of clusters (number of known initial infections).
 2. Initial Outbreak Sources: Pre-defined "centers" (e.g., first known cases).
@@ -47,8 +47,7 @@ The tool needs a text file (kmeans.txt) with:
 
 ### Sample Output
 1. Cluster Map:
-![Cluster Map Visualization](https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/kmeans.png) 
-
+<img src="images/https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/kmeans.png" alt="Cluster Map Visualization showing patient clusters and outbreak sources" width="280"/>
 - 🟢 🔵 🟣 🔴 = Patient Clusters  
 - ❌ Markers = outbreak sources (centroids).
 2. Stats
