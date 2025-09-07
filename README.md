@@ -1,4 +1,12 @@
-## Patient Location Clustering for Disease Outbreak Analysis
+<a id="readme-top"></a>
+
+<div align="center">
+  <h1>Patient Location Clustering for Disease Outbreak Analysis</h1>
+  
+[![Live Demo](https://img.shields.io/badge/Try-Live_Demo-green)]()
+![Status](https://img.shields.io/badge/Status-Concept-blue)
+
+</div>
 
 ### Project Description
 This tool groups COVID-19 patient locations to identify potential outbreak hotspots. By analyzing where infected people are located, it helps pinpoint high-risk areas and is useful for healthcare planning and resource allocation.
@@ -61,7 +69,7 @@ Adaptations of this solution can be used in various applications such as:
 
 ### How to Run
 
-📥 Clone the repo:
+Clone the repo:
    ```bash
    git clone https://github.com/UjuAyoku/kmeans-clustering.git
    cd kmeans-clustering
