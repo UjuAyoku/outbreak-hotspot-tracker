@@ -47,8 +47,7 @@ The tool needs a text file (kmeans.txt) with:
 
 ### Sample Output
 1. Cluster Map:
-![Cluster Map Visualization](https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/kmeans.png)
-<img src="https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/kmeans.png" alt="Cluster Map Visualization" width="280"/>
+<img src="https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/kmeans.png" alt="Cluster Map Visualization" width="350"/>
 - 🟢 🔵 🟣 🔴 = Patient Clusters  
 - ❌ Markers = outbreak sources (centroids).
 2. Stats
