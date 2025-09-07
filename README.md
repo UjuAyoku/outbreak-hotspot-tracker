@@ -47,6 +47,7 @@ The tool needs a text file (kmeans.txt) with:
 
 ### Sample Output
 1. Cluster Map:
+![Cluster Map Visualization](https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/kmeans.png) 
 
 - 🟢 🔵 🟣 🔴 = Patient Clusters  
 - ❌ Markers = outbreak sources (centroids).
@@ -68,12 +69,28 @@ Adaptations of this solution can be used in various applications such as:
 
 ### How to Run
 
-Clone the repo:
+1. Clone the repo:
    ```bash
    git clone https://github.com/UjuAyoku/kmeans-clustering.git
    cd kmeans-clustering
+   ```
+2.  **(Optional) Create a virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+3.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt  # or list them: pip install matplotlib numpy scikit-learn
+    ```
+4.  🚀 Run the script:
+    ```bash
+    python kmeans.py
+    ```
 
 ### Future Improvements:
 - Add time-based location data to track spread over time
 - Compare with other clustering methods (e.g. DBSCAN)  
 - Build a user-friendly web app.
+
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
