@@ -28,9 +28,9 @@ K-Means seeks to minimize the within-cluster variance (inertia), formalized by t
 ![J = \sum_{k=1}^{K} \sum_{x_i \in C_k} \| x_i - \mu_k \|^2](https://latex.codecogs.com/svg.latex?J%20%3D%20%5Csum_%7Bk%3D1%7D%5E%7BK%7D%20%5Csum_%7Bx_i%20%5Cin%20C_k%7D%20%5C%7C%20x_i%20-%20%5Cmu_k%20%5C%7C%5E2)
 
 **Where:**
-*   $ K $ = number of clusters (outbreak sources)
-*   $ x_i $ = coordinate of the \( i \)-th patient
-*   $ \mu_k $ = centroid of cluster $ C_k $
+*   $K$ = number of clusters (outbreak sources)
+*   $x_i$ = coordinate of the \( i \)-th patient
+*   $\mu_k$ = centroid of cluster $C_k$
 
 The algorithm iteratively:
 1.  **Assigns** each patient to the nearest centroid (based on Euclidean distance).
