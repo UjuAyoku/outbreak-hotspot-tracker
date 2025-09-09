@@ -30,6 +30,15 @@ Note: This is a simplified model. It does not account for travel history nor met
 | **Matplotlib**         | Visualize clusters                       |
 | **Silhouette Score**   | Evaluate clustering quality              |
 
+## Research Report
+If you are interested in the research methodology behind this project, including:
+- Problem framing
+- Experimental setup
+- Evaluation metrics
+- Results & limitations
+- Future work
+
+[View Research Writeup](https://github.com/UjuAyoku/outbreak-hotspot-tracker/blob/main/research-report.md)
 
 ### Input Data Format
 The tool needs a text file (kmeans.txt) with: 
