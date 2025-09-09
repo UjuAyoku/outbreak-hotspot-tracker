@@ -44,12 +44,12 @@ Cluster quality is evaluated using the **Silhouette Score**. The score for a sin
 ![s(i) = \frac{b(i) - a(i)}{\max\{a(i), b(i)\}}](https://latex.codecogs.com/svg.latex?s%28i%29%20%3D%20%5Cfrac%7Bb%28i%29%20-%20a%28i%29%7D%7B%5Cmax%5C%7Ba%28i%29%2C%20b%28i%29%5C%7D%7D)
 
 **Where:**
-*   \( a(i) \) = mean intra-cluster distance (average distance between sample \( i \) and all other points in the same cluster).
-*   \( b(i) \) = mean nearest-cluster distance (average distance between sample \( i \) and all points in the *next nearest* cluster).
+*   $a(i)$ = average distance from point $i$ to other points in the same cluster.
+*   $b(i)$ = minimum average distance from point from point $i$ to all other clusters.
 
-The overall Silhouette Score for a dataset is the mean of \( s(i) \) over all samples.
+The overall Silhouette Score for a dataset is the mean of $s(i)$ over all samples.
 *   **Scores close to +1** indicate well-separated and dense clusters.
-*   **Scores around 0** indicate overlapping clusters.
+*   **Scores around 0** suggest overlapping clusters.
 *   **Scores close to -1** suggest that samples may have been assigned to the wrong cluster.
 
 ### Tools
