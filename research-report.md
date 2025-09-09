@@ -19,7 +19,7 @@ The input dataset consists of:
 - Number of patients: Total infected individuals.
 - Number of clusters: Defined by number of known outbreak sources.
 - Initial outbreak sources: Index cases treated as initial centroids.
-- Patient locations: (x_i, y_i) coordinates of infected individuals.
+- Patient locations: ($x_i, y_i$) coordinates of infected individuals.
 
 ### Algorithm
 
