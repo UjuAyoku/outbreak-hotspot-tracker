@@ -19,12 +19,38 @@ The input dataset consists of:
 - Number of patients: Total infected individuals.
 - Number of clusters: Defined by number of known outbreak sources.
 - Initial outbreak sources: Index cases treated as initial centroids.
-- Patient locations: X, Y coordinates of infected individuals.
+- Patient locations: (x_i, y_i) coordinates of infected individuals.
 
 ### Algorithm
-- Clustering: A custom implementation of K-Means assigns patients to nearest outbreak source and iteratively updates centroids.
-- Evaluation: The Silhouette Score measures clustering quality (cohesion vs. separation).
-- Visualization: Clusters are plotted with distinct colors, and outbreak sources are highlighted as centroids.
+
+K-Means seeks to minimize the within-cluster variance (inertia), formalized by the following objective function:
+
+![J = \sum_{k=1}^{K} \sum_{x_i \in C_k} \| x_i - \mu_k \|^2](https://latex.codecogs.com/svg.latex?J%20%3D%20%5Csum_%7Bk%3D1%7D%5E%7BK%7D%20%5Csum_%7Bx_i%20%5Cin%20C_k%7D%20%5C%7C%20x_i%20-%20%5Cmu_k%20%5C%7C%5E2)
+
+**Where:**
+*   \( K \) = number of clusters (outbreak sources)
+*   \( x_i \) = coordinate of the \( i \)-th patient
+*   \( \mu_k \) = centroid of cluster \( C_k \)
+
+The algorithm iteratively:
+1.  **Assigns** each patient to the nearest centroid (based on Euclidean distance).
+2.  **Updates** centroid positions to be the mean of all points assigned to that cluster.
+3.  **Stops** when centroid assignments stabilize (convergence) or the maximum number of iterations is reached.
+
+### Evaluation Metric
+
+Cluster quality is evaluated using the **Silhouette Score**. The score for a single sample \( i \) is calculated as:
+
+![s(i) = \frac{b(i) - a(i)}{\max\{a(i), b(i)\}}](https://latex.codecogs.com/svg.latex?s%28i%29%20%3D%20%5Cfrac%7Bb%28i%29%20-%20a%28i%29%7D%7B%5Cmax%5C%7Ba%28i%29%2C%20b%28i%29%5C%7D%7D)
+
+**Where:**
+*   \( a(i) \) = mean intra-cluster distance (average distance between sample \( i \) and all other points in the same cluster).
+*   \( b(i) \) = mean nearest-cluster distance (average distance between sample \( i \) and all points in the *next nearest* cluster).
+
+The overall Silhouette Score for a dataset is the mean of \( s(i) \) over all samples.
+*   **Scores close to +1** indicate well-separated and dense clusters.
+*   **Scores around 0** indicate overlapping clusters.
+*   **Scores close to -1** suggest that samples may have been assigned to the wrong cluster.
 
 ### Tools
 - Python (NumPy, scikit-learn)
