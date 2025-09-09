@@ -39,7 +39,7 @@ The algorithm iteratively:
 
 ### Evaluation Metric
 
-Cluster quality is evaluated using the **Silhouette Score**. The score for a single sample \( i \) is calculated as:
+Cluster quality is evaluated using the **Silhouette Score**. The score for a single sample $i$ is calculated as:
 
 ![s(i) = \frac{b(i) - a(i)}{\max\{a(i), b(i)\}}](https://latex.codecogs.com/svg.latex?s%28i%29%20%3D%20%5Cfrac%7Bb%28i%29%20-%20a%28i%29%7D%7B%5Cmax%5C%7Ba%28i%29%2C%20b%28i%29%5C%7D%7D)
 
